@@ -1,60 +1,89 @@
+import { expect, Locator, Page } from "playwright/test";
 
-import { Page } from 'playwright';
-
-export class CommonActions {
+export class CommonActions{
    
+
     private page: Page;
 
+    constructor(Page: any){
 
-
-    constructor(page: Page) {
-        this.page = page;
-    }
-    
-    // Navigate to URL
-    async navigateTo(url: string): Promise<void> {
-        await this.page.goto(url);
+    this.page = Page;
     }
 
-    // Fill a textbox
-    async fillTextBox(selector: string, text: string): Promise<void> {
-        await this.page.fill(selector, text);
+    async navigateTo(url : string){
+     
+    await this.page.goto(url, { waitUntil: "networkidle" })
+
     }
 
-    // Click element
-    async clickElement(selector: string): Promise<void> {
-        await this.page.click(selector);
-        await this.page.keyboard.press('Escape');
+
+    async fillText(selector : string , text : string ): Promise<void>{
+
+        await this.page.fill(selector , text )
     }
 
-    // Check if checkbox/radio is checked
-    async isChecked(selector: string): Promise<boolean> {
-        return await this.page.isChecked(selector);
+
+
+    async clickelement(selector :string , text :string):Promise<void>{
+
+
+        await this.page.click(selector)
     }
 
-    // Upload file
-    async uploadFile(selector: string, filePath: string | string[]): Promise<void> {
-        await this.page.setInputFiles(selector, filePath);
-    }
 
-    // Select dropdown option using text
-    async selectOptionByText(selector: string, text: string): Promise<void> {
+      async selectOptionByText(selector: string, text: string): Promise<void> {
         await this.page.selectOption(selector, { label: text });
     }
-
-    async waitForElement(selector: string) {
-        await this.page.waitForSelector(selector);
-    }
-   
-async acceptAlert() {
-    this.page.once("dialog", async dialog => {
-        await dialog.accept();
-    });
-}
-
-    
-}
-
     
 
-   
+    async selectFromDropdown(dropdownSelector: string, optionText: string): Promise<void> {
+
+  await this.page.locator(dropdownSelector).click();
+
+  
+  await this.page.locator(`div[role='option']:has-text("${optionText}")`).click();
+}
+
+
+ static async waitForVisible(locator: Locator) {
+    await locator.waitFor({ state: 'visible' });
+  }
+
+  static async waitAndClick(locator: Locator) {
+    await locator.waitFor({ state: 'visible' });
+    await locator.click();
+  }
+
+  static async click(locator: Locator) {
+    await locator.click();
+  }
+
+  static async waitForPageLoad(page: Page) {
+    await page.waitForLoadState('networkidle');
+  }
+
+  static async verifyVisible(locator: Locator) {
+    await expect(locator).toBeVisible();
+  }
+
+  static async verifyText(locator: Locator, expectedText: string) {
+    await expect(locator).toHaveText(expectedText);
+  }
+
+
+
+  static async fillText(locator: Locator, value: string) {
+    await locator.waitFor({ state: 'visible' });
+    await locator.fill(value);
+  }
+
+
+  
+
+  
+
+
+
+
+}
+
