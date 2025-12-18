@@ -1,5 +1,5 @@
 {
-  "name": "formdemo",
+  "name": "pom.example",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,6 +10,6 @@
   "type": "commonjs",
   "devDependencies": {
     "@playwright/test": "^1.57.0",
-    "@types/node": "^25.0.0"
+    "@types/node": "^24.10.2"
   }
 }
