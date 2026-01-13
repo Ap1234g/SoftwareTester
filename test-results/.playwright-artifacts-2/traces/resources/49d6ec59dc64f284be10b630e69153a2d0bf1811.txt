@@ -1,0 +1,1 @@
+{"metadata":{"event_sent_at_ms":1765351273260},"events":[{"schema_id":"web_pixels_manager_load/3.1","payload":{"version":"ae1676cfwd2530674p4253c800m34e853cb","bundle_target":"modern","page_url":"https://shenclothing.com/","status":"loading","surface":"storefront-renderer"},"metadata":{"event_created_at_ms":1765351273260}}]}

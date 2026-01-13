@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <title>Button click Counter</title>
+        <style>
+            button {
+                font-size: 20px;
+                padding: 10px 20px;
+                cursor: pointer;
+            }
+            body{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                background-color: #f0f0f0;
+            }
+        </style>
+    </head>
+
+    <body>
+        <button id="clickButton" class="button-style" data-action="increement" role="button">Click me!</button>
+        <div id="counter" class="counter-style" data-counter="number">0</div>
+
+        <script>
+            const button = document.getElementById('clickButton');
+            let clickCount = 0;
+
+            button.addEventListener('click', () => {
+                clickCount++;
+                button.textContent = `Clicked ${clickCount} ${clickCount === 1 ? 'time' : 'times'}`;
+            });
+        </script>
+
+
+    </body>
+</html>

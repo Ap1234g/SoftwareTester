@@ -1,0 +1,1 @@
+{"events":[{"schema_id":"trekkie_metrics/2.0","payload":{"metric_name":"navigation-PerformanceNavigationTiming-navigate","shop_id":39893663895},"metadata":{"event_created_at_ms":1765351274485}}],"metadata":{"event_sent_at_ms":1765351274485}}

@@ -1,0 +1,49 @@
+{"version":8,"type":"context-options","origin":"testRunner","browserName":"","playwrightVersion":"1.57.0","options":{},"platform":"win32","wallTime":1765351270421,"monotonicTime":723548.397,"sdkLanguage":"javascript"}
+{"type":"before","callId":"hook@1","stepId":"hook@1","startTime":723561.707,"class":"Test","method":"hook","title":"Before Hooks","params":{},"stack":[]}
+{"type":"before","callId":"fixture@26","stepId":"fixture@26","parentId":"hook@1","startTime":723590.36,"class":"Test","method":"fixture","title":"Fixture \"browser\"","params":{},"stack":[]}
+{"type":"before","callId":"pw:api@27","stepId":"pw:api@27","parentId":"fixture@26","startTime":723597.318,"class":"Test","method":"pw:api","title":"Launch browser","params":{"handleSIGINT":"false","tracesDir":"C:\\Users\\Geek1_PC\\PlaywrightProject\\test-results\\.playwright-artifacts-1\\traces","headless":"false","ignoreDefaultArgs":"undefined","ignoreAllDefaultArgs":"false","env":"undefined","timeout":"180000"},"stack":[]}
+{"type":"after","callId":"pw:api@27","endTime":724056.541,"annotations":[]}
+{"type":"after","callId":"fixture@26","endTime":724057.173,"annotations":[]}
+{"type":"before","callId":"fixture@30","stepId":"fixture@30","parentId":"hook@1","startTime":724060.696,"class":"Test","method":"fixture","title":"Fixture \"context\"","params":{},"stack":[]}
+{"type":"before","callId":"pw:api@31","stepId":"pw:api@31","parentId":"fixture@30","startTime":724064.729,"class":"Test","method":"pw:api","title":"Create context","params":{"acceptDownloads":"accept","bypassCSP":"false","colorScheme":"light","deviceScaleFactor":"1","hasTouch":"false","ignoreHTTPSErrors":"true","isMobile":"false","javaScriptEnabled":"true","locale":"en-US","offline":"false","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.7499.4 Safari/537.36","viewport":"Object","serviceWorkers":"allow","selectorEngines":"[]","testIdAttributeName":"data-testid","noDefaultViewport":"false","extraHTTPHeaders":"undefined","storageState":"undefined","reducedMotion":"undefined","forcedColors":"undefined","contrast":"undefined","clientCertificates":"undefined"},"stack":[]}
+{"type":"after","callId":"pw:api@31","endTime":724088.55,"annotations":[]}
+{"type":"after","callId":"fixture@30","endTime":724099.919,"annotations":[]}
+{"type":"before","callId":"fixture@32","stepId":"fixture@32","parentId":"hook@1","startTime":724101.071,"class":"Test","method":"fixture","title":"Fixture \"page\"","params":{},"stack":[]}
+{"type":"before","callId":"pw:api@33","stepId":"pw:api@33","parentId":"fixture@32","startTime":724106.042,"class":"Test","method":"pw:api","title":"Create page","params":{},"stack":[]}
+{"type":"after","callId":"pw:api@33","endTime":724825.245,"annotations":[]}
+{"type":"after","callId":"fixture@32","endTime":724826.535,"annotations":[]}
+{"type":"after","callId":"hook@1","endTime":724826.911,"annotations":[]}
+{"type":"before","callId":"pw:api@34","stepId":"pw:api@34","startTime":724849.977,"class":"Test","method":"pw:api","title":"Navigate to \"/login\"","params":{"url":"https://the-internet.herokuapp.com/login","waitUntil":"load","timeout":"0"},"stack":[{"file":"C:\\Users\\Geek1_PC\\PlaywrightProject\\tests\\codegen.test.ts","line":4,"column":14}]}
+{"type":"after","callId":"pw:api@34","endTime":726631.777,"annotations":[],"error":{"name":"","message":"Error: page.goto: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - navigating to \"https://the-internet.herokuapp.com/login\", waiting until \"load\"\u001b[22m\n","stack":"Error: page.goto: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - navigating to \"https://the-internet.herokuapp.com/login\", waiting until \"load\"\u001b[22m\n\n    at C:\\Users\\Geek1_PC\\PlaywrightProject\\tests\\codegen.test.ts:4:14"}}
+{"type":"error","message":"Error: page.goto: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - navigating to \"https://the-internet.herokuapp.com/login\", waiting until \"load\"\u001b[22m\n","stack":[{"file":"C:\\Users\\Geek1_PC\\PlaywrightProject\\tests\\codegen.test.ts","line":4,"column":14}]}
+{"type":"before","callId":"hook@35","stepId":"hook@35","startTime":726637.548,"class":"Test","method":"hook","title":"After Hooks","params":{},"stack":[]}
+{"type":"before","callId":"fixture@36","stepId":"fixture@36","parentId":"hook@35","startTime":726640.9,"class":"Test","method":"fixture","title":"Fixture \"page\"","params":{},"stack":[]}
+{"type":"after","callId":"fixture@36","endTime":726642.208,"annotations":[]}
+{"type":"before","callId":"fixture@37","stepId":"fixture@37","parentId":"hook@35","startTime":726644.353,"class":"Test","method":"fixture","title":"Fixture \"context\"","params":{},"stack":[]}
+{"type":"before","callId":"pw:api@38","stepId":"pw:api@38","parentId":"fixture@37","startTime":726747.678,"class":"Test","method":"pw:api","title":"Close context","params":{"reason":"Test ended."},"stack":[]}
+{"type":"after","callId":"pw:api@38","endTime":726770.846,"annotations":[]}
+{"type":"after","callId":"fixture@37","endTime":726771.307,"annotations":[]}
+{"type":"before","callId":"fixture@44","stepId":"fixture@44","parentId":"hook@35","startTime":726781.186,"class":"Test","method":"fixture","title":"Fixture \"actionTimeout\"","params":{},"stack":[{"file":"project#Chromium","line":1,"column":1}],"group":"configuration"}
+{"type":"after","callId":"fixture@44","endTime":726781.537,"annotations":[]}
+{"type":"before","callId":"fixture@48","stepId":"fixture@48","parentId":"hook@35","startTime":726790.334,"class":"Test","method":"fixture","title":"Fixture \"userAgent\"","params":{},"stack":[{"file":"project#Chromium","line":1,"column":1}],"group":"configuration"}
+{"type":"after","callId":"fixture@48","endTime":726790.723,"annotations":[]}
+{"type":"before","callId":"fixture@50","stepId":"fixture@50","parentId":"hook@35","startTime":726794.325,"class":"Test","method":"fixture","title":"Fixture \"viewport\"","params":{},"stack":[{"file":"project#Chromium","line":1,"column":1}],"group":"configuration"}
+{"type":"after","callId":"fixture@50","endTime":726794.803,"annotations":[]}
+{"type":"before","callId":"fixture@57","stepId":"fixture@57","parentId":"hook@35","startTime":726806.167,"class":"Test","method":"fixture","title":"Fixture \"isMobile\"","params":{},"stack":[{"file":"project#Chromium","line":1,"column":1}],"group":"configuration"}
+{"type":"after","callId":"fixture@57","endTime":726806.533,"annotations":[]}
+{"type":"before","callId":"fixture@58","stepId":"fixture@58","parentId":"hook@35","startTime":726807.468,"class":"Test","method":"fixture","title":"Fixture \"ignoreHTTPSErrors\"","params":{},"stack":[{"file":"project#Chromium","line":1,"column":1}],"group":"configuration"}
+{"type":"after","callId":"fixture@58","endTime":726808.266,"annotations":[]}
+{"type":"before","callId":"fixture@61","stepId":"fixture@61","parentId":"hook@35","startTime":726811.306,"class":"Test","method":"fixture","title":"Fixture \"hasTouch\"","params":{},"stack":[{"file":"project#Chromium","line":1,"column":1}],"group":"configuration"}
+{"type":"after","callId":"fixture@61","endTime":726811.477,"annotations":[]}
+{"type":"before","callId":"fixture@63","stepId":"fixture@63","parentId":"hook@35","startTime":726813.649,"class":"Test","method":"fixture","title":"Fixture \"deviceScaleFactor\"","params":{},"stack":[{"file":"project#Chromium","line":1,"column":1}],"group":"configuration"}
+{"type":"after","callId":"fixture@63","endTime":726813.879,"annotations":[]}
+{"type":"after","callId":"hook@35","endTime":726820.828,"annotations":[]}
+{"type":"before","callId":"hook@69","stepId":"hook@69","startTime":726821.793,"class":"Test","method":"hook","title":"Worker Cleanup","params":{},"stack":[]}
+{"type":"before","callId":"fixture@73","stepId":"fixture@73","parentId":"hook@69","startTime":726826.881,"class":"Test","method":"fixture","title":"Fixture \"browser\"","params":{},"stack":[]}
+{"type":"after","callId":"fixture@73","endTime":727138.52,"annotations":[]}
+{"type":"before","callId":"fixture@77","stepId":"fixture@77","parentId":"hook@69","startTime":727140.812,"class":"Test","method":"fixture","title":"Fixture \"defaultBrowserType\"","params":{},"stack":[{"file":"project#Chromium","line":1,"column":1}],"group":"configuration"}
+{"type":"after","callId":"fixture@77","endTime":727140.955,"annotations":[]}
+{"type":"before","callId":"fixture@82","stepId":"fixture@82","parentId":"hook@69","startTime":727143.275,"class":"Test","method":"fixture","title":"Fixture \"headless\"","params":{},"stack":[{"file":"project#Chromium","line":1,"column":1}],"group":"configuration"}
+{"type":"after","callId":"fixture@82","endTime":727143.336,"annotations":[]}
+{"type":"after","callId":"hook@69","endTime":727143.626,"annotations":[]}
+{"type":"error","message":"\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m","stack":[]}
