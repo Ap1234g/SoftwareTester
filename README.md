@@ -1,6 +1,6 @@
 # SoftwareTester
 API testing using Postman for a Bearer Token preschool management system
-## 🚀 How to Use This Collection
+## How to Use This Collection
 
 1. Import the Postman collection
 2. Import the Postman environment
