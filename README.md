@@ -1,11 +1,31 @@
 # SoftwareTester
 API testing using Postman for a Bearer Token preschool management system
-## How to Use This Collection
+## Test Coverage & Structure
 
-1. Import the Postman collection
-2. Import the Postman environment
-3. Start the Spring Boot backend
-4. Select the environment in Postman
-5. Run **POST - Admin Login** to generate BearerToken
-6. Execute other APIs using Collection Runner or manually
+The Postman collection is organised using logical folders inside the collection:
+
+### Positive Test Scenarios
+- Valid admin login
+- Successful learner creation
+- Update learner details
+- Retrieve learner and parent records
+
+### Negative & Authorization Test Scenarios
+- Login with invalid credentials (401)
+- Access secured APIs without token (401)
+- Update learner with invalid ID (404)
+- Delete parent with non-existing ID
+- Role-based access validation
+
+### Folder Structure Inside Postman
+- Auth
+- Learners
+- Parents
+- Teachers
+- Progress
+- API Test Cases
+  - Auth Test Cases
+  - Learner CRUD Test Cases
+  - Parent CRUD Test Cases
+
 
