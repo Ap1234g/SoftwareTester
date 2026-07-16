@@ -1,0 +1,25 @@
+
+
+[
+    {
+    "firstName": "N123", 
+    "lastName": "Doo",
+    "postalCode": "123",
+    "currency": "Dollar"
+}
+,
+{
+    "firstName": "yen", 
+    "lastName": "676",
+    "postalCode": "2345",
+    "currency": ""
+},
+
+{
+
+    "firstName": "",
+    "lastName": "Nami",
+    "postalCode": "name",
+    "currency" : "ZAR"
+}
+]
