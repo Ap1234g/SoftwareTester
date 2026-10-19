@@ -1,0 +1,24 @@
+GET http://localhost:8080/api/clients
+Accept: application/json
+
+###
+POST http://localhost:80/api/item
+Content-Type: application/json
+
+{}
+
+###
+### Get all clients
+GET http://localhost:8080/api/clients
+
+### Get all dresses
+GET http://localhost:8080/api/dresses
+
+### Get all bookings
+GET http://localhost:8080/api/bookings
+
+### Get all payments
+GET http://localhost:8080/api/payments
+
+### Get all collections
+GET http://localhost:8080/api/collections
